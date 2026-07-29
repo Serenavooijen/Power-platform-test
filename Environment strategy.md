@@ -105,7 +105,7 @@ The Development (Hotfix) environment is copied from the Development (Primary) or
 
 Be careful when applying changes in Development (Hotfix), as technical implications cannot be undone after a release to the production environment. Some changes, for example creating business rules or registering/deregistering plugins, create GUIDs which you cannot see but which have consequences during import. These GUIDs should always be equal on all environments. That is why changes on Development (Hotfix) should be imported to Development (Primary).
 
-![Maintenance / Wave Updates environment strategy](environment-update)
+![Maintenance / Wave Updates environment strategy](Images/Enviroment-Update.png)
 
 ### Tips
 
