@@ -147,13 +147,13 @@ In the early stage, this environment is used by the development team. When data 
 
 It is advisable to regularly update the Test (Migration) environment with new customizations, in the same cadence as the Test (Primary) environment, to make sure all fields, business rules and changes are reflected during the development and testing of the data migration.
 
-![Complex data migration environment strategy](environment-migration)
+![Complex data migration environment strategy](Images/Environment-Migration.png)
 
 ## Different Features
 
 When a business process, with a specific feature turned on or off, or a specific feature that may not go live needs to be tested, an extra Test environment is usually created to support this process. An acceptance environment should not be used for this purpose, since the acceptance environment must reflect the next release to the live environment and therefore has specific features disabled or enabled based on that environment.
 
-![Different features environment strategy](environment-features)
+![Different features environment strategy](Images/Environment-Features.png)
 
 ### Tips
 
@@ -165,7 +165,7 @@ When the decision is made that multiple live environments are required, there sh
 
 These environments are used by key users and/or end users.
 
-![Multiple live environments strategy](environment-multi-country)
+![Multiple live environments strategy](Images/Environment-Multi-Country.png)
 
 ## Multi-stream Development
 
@@ -180,7 +180,7 @@ To achieve multi-stream development, two or more development environments must b
 
 After the changes are done on the Build environment, the cross-stream solutions can be exported and imported in Test with the managed stream solutions.
 
-![Multi-stream development environment strategy](environment-multi-stream)
+![Multi-stream development environment strategy](Images/Environment-Multi-Stream.png)
 
 ## Multi Country Setup
 
