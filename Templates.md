@@ -4,7 +4,7 @@ We have developed some deployment templates to use within your projects. They fo
 
 The templates are in the [OneHSO DevOps organization](https://dev.azure.com/OneHSO/HSO%20Best%20Practices) in the PP-099-PipelineTemplates repository. The templates and examples are in different branches according to the structure below. A certain version of the examples always uses that same version of the templates. It's recommended to always use the latest version available.
 
-*(Image: branch/version structure diagram)*
+![Environment strategy](Images/Template-Structure.png)
 
 ### Power Platform - Advanced Project Booster
 
@@ -28,7 +28,7 @@ Source control (git) is the single source of truth. Everything that is deployed 
 
 ### Process without Build environment
 
-*(Image: process diagram without a build environment)*
+![Environment strategy](Images/Template-Highlevel-Process.png)
 
 1. The export pipeline exports the solutions (both managed and unmanaged) and reference data from the development environment. Reference data is optional, so that can be skipped if your project doesn't have any reference data.
 2. After everything is exported, the solutions are extracted using the solution packages and everything is committed into source control.
@@ -37,7 +37,7 @@ Source control (git) is the single source of truth. Everything that is deployed 
 
 ### Process with a Build environment
 
-*(Image: process diagram with a build environment)*
+![Environment strategy](Images/Template-Highlevel-Process-Dev-CQsX7dkc.png)
 
 1. Sprint solutions are exported from the development environment.
 2. The sprint solutions are committed to source control. They are placed into a separate repository as it's only for traceability purposes.
@@ -62,13 +62,13 @@ This pipeline is to generate early bound classes for your solution. As everybody
 
 This pipeline is for moving your sprint solutions from Development to Build. You don't need this pipeline if you don't use a build environment.
 
-*(Image: Build-Update pipeline diagram)*
+![Environment strategy](Images/Template-Pipeline-Build.png)
 
 ### Export
 
 This pipeline is to export your solutions & reference data and check them into source control.
 
-*(Image: Export pipeline diagram)*
+![Environment strategy](Images/Template-Pipeline-Export.png)
 
 This pipeline has variables to control whether solutions and/or reference data must be exported. If, for example, your project doesn't use reference data, set this parameter to 'false' but keep the reference data stage. This way it's easy to add reference data whenever your project needs it in the future.
 
@@ -78,7 +78,7 @@ Setting the solution export to 'false' is useful if you want to publish an updat
 
 This pipeline is for deploying your solutions to test, acceptance and production (and any other environments you may have).
 
-*(Image: Deploy pipeline diagram)*
+![Environment strategy](Images/Template-Pipeline-Deploy.png)
 
 #### Prepare Package
 
