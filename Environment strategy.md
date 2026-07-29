@@ -47,12 +47,12 @@ To develop and maintain an environment at least three environments are required.
 The classic overview of environments consists of a Development, Test, UAT and Live environment.
 
 
-![Environment Build](Environment-Classic-DN7C6NN9.png)
+![Environment Build](Images/Environment-Classic.png)
 **Figure 1. Classic environment strategy**
 
 When working with Azure DevOps build pipeline and the solution split based on components, the following environments are necessary. Please refer to the Power Platform - Deployments for further information regarding automated deployments.
 
-![Environment strategy](Environment-Build-C18AeuKM.png)
+![Environment strategy](Images/Environment-Build.png)
 
 **Figure 2. Environment strategy**
 
