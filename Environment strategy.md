@@ -58,7 +58,7 @@ When working with Azure DevOps build pipeline and the solution split based on co
 
 The image provided illustrates an environment configuration where the Reference Data resides in a separate environment, and the deployments are carried out using Azure DevOps build pipelines.
 
-![Environment strategy with Azure DevOps Pipelines](environment-strategy-build-azure-pipelines)
+![Environment strategy with Azure DevOps Pipelines](Images/Environment-CICDforMicrosoftPowerPlatformArchitecture.png)
 
 **Figure 3. Environment strategy with Azure DevOps Pipelines**
 
