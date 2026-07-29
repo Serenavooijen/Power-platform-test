@@ -121,7 +121,7 @@ The initialization of the Development (Release) is by creating a copy of Develop
 
 The development team can continue working on new features through the Development (Primary) and Test (Primary) environments. While a stable version is tested by the key users on the UAT (Release). When minor fixes need to be done on the release, these changes are applied on the Development (Release) environment and tested on the Test (Release) environment before being rolled out to UAT (Release). When the changes are approved, the changes are imported in Development (Primary) to make sure they are not lost during a next release.
 
-![Release environment strategy](Images/Environment-Support)
+![Release environment strategy](Images/Environment-Support.png)
 
 ### Warning
 
@@ -133,7 +133,7 @@ When end user trainings are performed, training data is often required. This tra
 
 This training environment should be updated in the same way the UAT environment is updated and it is advisable to load this environment with dummy data. This environment is used by trainers and end users.
 
-![Training environment strategy](environment-training)
+![Training environment strategy](Images/Environment-Training.png)
 
 ### Warning
 
