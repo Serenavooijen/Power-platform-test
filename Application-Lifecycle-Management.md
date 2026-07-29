@@ -45,6 +45,7 @@ The motivation regarding never making any manual customizations is because you d
 
 Deployments should be idempotent. This means when running a deployment twice on the same environment, the result must be the same. *(See original documentation for an example image: the non-idempotent version creates a new record every time it is run, causing multiple records in the system; the idempotent version will always result in 1 record.)*
 
+![Environment Build](Images/Rules-Idempotence.png)
 
 **Motivation**
 
